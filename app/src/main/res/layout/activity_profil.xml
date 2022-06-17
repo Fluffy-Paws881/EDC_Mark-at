@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_profil">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="418dp"
+        android:layout_height="60dp"
+        android:background="?attr/colorOnSecondary"
+        android:clickable="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="411dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/IMG_bout"
+            android:layout_width="57dp"
+            android:layout_height="41dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.385"
+            app:layout_constraintStart_toEndOf="@+id/TXT_nftName"
+            app:srcCompat="@drawable/ic_baseline_local_grocery_store_24"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <TextView
+            android:id="@+id/TXT_nftName"
+            android:layout_width="157dp"
+            android:layout_height="49dp"
+            android:text="Mon profil"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="2dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/BTN_deco"
+        android:layout_width="143dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="16dp"
+        android:text="Déconnexion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrl_profil"
+        android:layout_width="406dp"
+        android:layout_height="499dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintBottom_toTopOf="@+id/BTN_deco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/LI_inventaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/TXT_pro"
+        android:layout_width="262dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

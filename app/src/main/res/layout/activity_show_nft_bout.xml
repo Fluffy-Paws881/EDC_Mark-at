@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_showNFT_bout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="413dp"
+        android:layout_height="54dp"
+        android:background="?attr/colorOnSecondary"
+        android:clickable="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <TextView
+        android:id="@+id/TXT_nftName"
+        android:layout_width="157dp"
+        android:layout_height="49dp"
+        android:text="NFT"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ImageView
+        android:id="@+id/IMG_bck"
+        android:layout_width="54dp"
+        android:layout_height="43dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/TXT_nftName"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintStart_toEndOf="@+id/TXT_nftName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <ImageView
+        android:id="@+id/IMG_NFT"
+        android:layout_width="300dp"
+        android:layout_height="311dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_nftName"
+        app:layout_constraintVertical_bias="0.159"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/BTN_buy"
+        android:layout_width="182dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:text="Acheter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IMG_NFT"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <TextView
+        android:id="@+id/TXT_prix"
+        android:layout_width="305dp"
+        android:layout_height="62dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/BTN_buy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IMG_NFT"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/TXT_compar"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/BTN_buy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_prix" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
